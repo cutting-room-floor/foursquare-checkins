@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>foursquare and MapBox Streets</title>
+    <script type='text/javascript' src='modestmaps.min.js'></script>
+    <script type='text/javascript' src='wax.mm.min.js'></script>
+    <script type='text/javascript' src='site.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link href='site.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div id='map'></div>
+    <div id='block'>
+      <a href='#' id='collapse'>&#x2715;</a>
+      <h3><a href='http://foursquare.com/'>foursquare</a> &amp; <a href='http://mapbox.com/tour/'>MapBox Streets</a></h3>
+      <div class='plus'>
+          <a href='#' class='split' id='foursquare'>foursquare</a>
+          <a href='#' class='split' id='plus'>+</a>
+          <a href='#' class='split' id='streets'>MapBox Streets</a>
+      </div>
+      <p class='clearfix'><strong>foursquare</strong> checkins are in green,
+      brighter with higher density. <strong>mapbox streets</strong>
+      is in red, brighter with more roads and features per mile.</p>
+    </div>
+  </body>
+</html>
