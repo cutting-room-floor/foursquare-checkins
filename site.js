@@ -2,6 +2,7 @@ function $(e) {
   return document.getElementById(e);
 }
 
+
 window.onload = function() {
   // load
   wax.tilejson('http://a.tiles.mapbox.com/v3/-tmcw.foursquare-density.jsonp', function(four_density) {
