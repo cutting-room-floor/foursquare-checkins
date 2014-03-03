@@ -5,8 +5,8 @@ function $(e) {
 
 window.onload = function() {
   // load
-  wax.tilejson('http://a.tiles.mapbox.com/v3/-tmcw.foursquare-density.jsonp', function(four_density) {
-    wax.tilejson('http://a.tiles.mapbox.com/v3/tmcw.mapbox-streets-density.jsonp', function(streets_density) {
+  wax.tilejson('https://a.tiles.mapbox.com/v3/-tmcw.foursquare-density.jsonp?secure', function(four_density) {
+    wax.tilejson('https://a.tiles.mapbox.com/v3/tmcw.mapbox-streets-density.jsonp?secure', function(streets_density) {
       map = new MM.Map('map', [
           (street_layer = new wax.mm.connector(streets_density)),
           (four_layer = new wax.mm.connector(four_density))
